@@ -1,0 +1,17 @@
+<!--pages/board/board.wxml-->
+<view class="board">
+	<view class='form-box'>
+	  <input class="input" placeholder='请输入内容' placeholder-class='input-placeholder' value='{{inputVal}}' bindinput='getMsg'></input>
+	  <button size='mini' type='primary' class="btn-send" bindtap='addMsg'>留言</button>
+	</view>
+	<view class="none-msg" wx:if="{{msgData.length==0}}">
+		<text>暂无留言~</text>
+	</view>
+	<view class="list">
+		<view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+			<text>{{index}} {{item.name}} {{item.des}}</text>
+			<button class="btn-del" size="mini" data-index="{{index}}" bindtap='delMsg'>删除</button>
+		</view>
+	</view>
+</view>
+

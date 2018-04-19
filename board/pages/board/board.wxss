@@ -1,0 +1,50 @@
+/* pages/board/board.wxss */
+.board{
+	padding: 10px;
+}
+.form-box{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+}
+.input{
+	height: 30px;
+	line-height: 30px;
+	flex: 1;
+	font-size: 13px;
+	padding: 0 6px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 5px;
+	box-sizing: border-box;
+}
+.input-placeholder{
+	color: #f00;
+}
+.btn-send{}
+.none-msg{
+	padding: 20px 0;
+	font-size: 18px;
+	color: #ccc;
+	text-align: center;
+}
+.list{}
+.item{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+.item text{
+	flex: 1;
+	font-size: 13px;
+	line-height: 1.2em;
+	margin-right: 5px;
+	word-break: break-all;
+}
+.btn-del{}
