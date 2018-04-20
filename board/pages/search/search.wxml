@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<view class='search-box'>
+  <input class='input' type='number' maxlength="11" focus placeholder='手机号码' placeholder-class='input-placeholder' bindinput='getVal' bindfocus='resetVal' value='{{inputVal}}'></input>
+  <button size='mini' type='primary' bindtap='getResult'>立即查询</button>
+</view>
+<view class='result-info' wx:if="{{result.length!=0}}">
+  <text>{{result}}</text>
+</view>
+<view class='turn-board'>
+ <button size='default' type='default' bindtap='turnBoard'>进入留言板</button>
+</view>

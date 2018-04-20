@@ -1,5 +1,21 @@
 //app.js
 App({
+  GetHttpData: function(phoneNum,callback){
+    wx.request({
+      url: 'https://apicloud.mob.com/v1/mobile/address/query?key=17895d7173644&phone=' + phoneNum,
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function(res) {
+        console.log(res.data);
+        callback(res.data);
+      }
+    });
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

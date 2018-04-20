@@ -1,0 +1,29 @@
+/* pages/search/search.wxss */
+.search-box{
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.input{
+	flex: 1;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	padding: 0 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 6px;
+	margin-right: 5px;
+}
+.input-placeholder{
+	color: #f60;
+}
+.result-info{
+  padding: 10px;
+  font-size: 14px;
+}
+.turn-board{
+	padding: 10px;
+}
