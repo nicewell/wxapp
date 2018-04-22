@@ -1,1 +1,29 @@
 /* pages/weather/weather.wxss */
+.wrap{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: #2ecc71;
+	color: #ffffff;
+}
+.today{
+	height: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 30rpx;
+}
+.city{
+	padding: 1em 0;
+	margin-bottom: 50rpx;
+}
+.temp{
+	font-size: 60rpx;
+}
+.weather{
+	margin-bottom: 50rpx;
+}
+.tips{}
+.future{}

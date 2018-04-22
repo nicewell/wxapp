@@ -1,2 +1,10 @@
 <!--pages/weather/weather.wxml-->
-<text>pages/weather/weather.wxml</text>
+<view class='wrap'>
+	<view class="today">
+		<view class="city">{{city}} {{district}}</view>
+		<view class="temp">{{temp}}</view>
+		<view class="weather">{{weather}} {{wind}}</view>
+		<view class="tips">雨来的突然，走的也突然~</view>
+	</view>
+	<view class="future"></view>
+</view>

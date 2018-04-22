@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getPos();
   },
 
   /**
@@ -62,5 +62,75 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  /**
+   * 获取位置信息
+   */
+  getPos: function(){
+    var This = this;
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function(res) {
+        var latitude = res.latitude;
+        var longitude = res.longitude;
+        console.log(latitude,longitude);
+        // 打开地图
+        // wx.openLocation({
+        //   latitude: latitude,
+        //   longitude: longitude,
+        //   scale: 28
+        // });
+        This.loadCity(latitude,longitude);
+      }
+    });
+  },
+  loadCity: function(latitude,longitude){
+    var This = this;
+    wx.request({
+      url: 'http://api.map.baidu.com/geocoder/v2/?ak=GOx3xUV7P9jTauYfCuoUZhVfX8tDxLki&location='+latitude+','+longitude+'&output=json',
+      data: {
+          x: '' ,
+          y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function(res) {
+        var result = res.data.result.addressComponent;
+        console.log(result);
+        var city = result.city;
+        var district = result.district;
+        This.setData({
+          city:city,
+          district:district
+        });
+        This.loadWeather(This.data.city);
+      }
+    });
+  },
+  loadWeather:function(location){
+    var This = this;
+    wx.request({
+      url: 'http://api.map.baidu.com/telematics/v3/weather?location='+location+'&output=json&ak=GOx3xUV7P9jTauYfCuoUZhVfX8tDxLki',
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        var result = res.data;
+        var temperature = result.results[0].weather_data[0].temperature;
+        var weather = result.results[0].weather_data[0].weather;
+        var wind = result.results[0].weather_data[0].wind;
+        console.log(result.results[0]);
+        This.setData({
+          temp:temperature,
+          weather:weather,
+          wind:wind
+        });
+      }
+    });
   }
 })

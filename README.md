@@ -26,3 +26,5 @@
         - 网络通信
         - 百度地图接口
         - 天气接口
+- [百度天气api接口](https://blog.csdn.net/younghaiqing/article/details/54799303)
+- 
