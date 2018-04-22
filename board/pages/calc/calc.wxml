@@ -2,24 +2,26 @@
 <view class='calc'>
 	<input class="result" type='num' disabled='true' value='{{result}}'></input>
 	<view class="ctrls">
-		<text bindtap='setNum' data-val='7'>7</text>
-		<text bindtap='setNum' data-val='8'>8</text>
-		<text bindtap='setNum' data-val='9'>9</text>
-		<text bindtap='setNum' data-val='/'>/</text>
+		<text bindtap='setNum' data-val='{{val7}}'>{{val7}}</text>
+		<text bindtap='setNum' data-val='{{val8}}'>{{val8}}</text>
+		<text bindtap='setNum' data-val='{{val9}}'>{{val9}}</text>
+		<text bindtap='setNum' data-val='{{val01}}'>{{val01}}</text>
 
-		<text bindtap='setNum' data-val='4'>4</text>
-		<text bindtap='setNum' data-val='5'>5</text>
-		<text bindtap='setNum' data-val='6'>6</text>
-		<text bindtap='setNum' data-val='*'>*</text>
+		<text bindtap='setNum' data-val='{{val4}}'>{{val4}}</text>
+		<text bindtap='setNum' data-val='{{val5}}'>{{val5}}</text>
+		<text bindtap='setNum' data-val='{{val6}}'>{{val6}}</text>
+		<text bindtap='setNum' data-val='{{val02}}'>{{val02}}</text>
 
-		<text bindtap='setNum' data-val='1'>1</text>
-		<text bindtap='setNum' data-val='2'>2</text>
-		<text bindtap='setNum' data-val='3'>3</text>
-		<text bindtap='setNum' data-val='-'>-</text>
+		<text bindtap='setNum' data-val='{{val1}}'>{{val1}}</text>
+		<text bindtap='setNum' data-val='{{val2}}'>{{val2}}</text>
+		<text bindtap='setNum' data-val='{{val3}}'>{{val3}}</text>
+		<text bindtap='setNum' data-val='{{val03}}'>{{val03}}</text>
 		
-		<text bindtap='setNum' data-val='0'>0</text>
-		<text bindtap='setNum' data-val='.'>.</text>
-		<text bindtap='setNum' data-val='+'>+</text>
-		<text bindtap='setNum' data-val='='>=</text>
+		<text bindtap='setNum' data-val='{{val0}}'>{{val0}}</text>
+		<text bindtap='setNum' data-val='{{val00}}'>{{val00}}</text>
+		<text bindtap='clearNum' data-val='{{val06}}'>{{val06}}</text>
+		<text bindtap='setNum' data-val='{{val04}}'>{{val04}}</text>
+
+	    <text bindtap='getNum' data-val='{{val05}}'>{{val05}}</text>
 	</view>
 </view>

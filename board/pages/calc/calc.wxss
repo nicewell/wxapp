@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 20rpx 10rpx;
+	font-size: 60rpx;
 }
 .result{
 	border: 1px solid #ccc;
@@ -13,8 +14,8 @@
 	border-radius: 5px;
 	padding: 0 10px;
 	margin-bottom: 50rpx;
-	font-size: 20px;
 	color: #f60;
+	text-align: right;
 }
 .ctrls{
 	display: flex;
@@ -31,4 +32,11 @@
 	text-align: center;
 	color: #ccc;
 	margin-bottom: 43rpx;
+	overflow: hidden;
+}
+.ctrls text:last-child{
+	width: 100%;
+	background-color: #f60;
+	color: #fff;
+	font-size: 100rpx;
 }
