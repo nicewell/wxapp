@@ -4,7 +4,7 @@
   <button size='mini' type='primary' bindtap='getResult'>立即查询</button>
 </view>
 <view class='result-info' wx:if="{{result.length!=0}}">
-  <text>{{result}}</text>
+  <text>{{result.province}} {{result.city}} {{result.operator}}</text>
 </view>
 <view class='turn-board'>
  <button size='default' type='default' bindtap='turnBoard'>进入留言板</button>

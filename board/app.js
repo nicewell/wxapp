@@ -1,6 +1,7 @@
 //app.js
 App({
   GetHttpData: function(phoneNum,callback){
+    // 向服务器提交请求
     wx.request({
       url: 'https://apicloud.mob.com/v1/mobile/address/query?key=17895d7173644&phone=' + phoneNum,
       data: {
@@ -11,8 +12,14 @@ App({
         'content-type': 'application/json' // 默认值
       },
       success: function(res) {
-        console.log(res.data);
-        callback(res.data);
+        console.log(res.data.result);
+        callback(res.data.result);
+      },
+      fail: function(res) {
+        console.log('失败'+res.data);
+      },
+      complete: function(res){
+        console.log('完成'+res.data);
       }
     });
   },

@@ -1,0 +1,25 @@
+<!--pages/calc/calc.wxml-->
+<view class='calc'>
+	<input class="result" type='num' disabled='true' value='{{result}}'></input>
+	<view class="ctrls">
+		<text bindtap='setNum' data-val='7'>7</text>
+		<text bindtap='setNum' data-val='8'>8</text>
+		<text bindtap='setNum' data-val='9'>9</text>
+		<text bindtap='setNum' data-val='/'>/</text>
+
+		<text bindtap='setNum' data-val='4'>4</text>
+		<text bindtap='setNum' data-val='5'>5</text>
+		<text bindtap='setNum' data-val='6'>6</text>
+		<text bindtap='setNum' data-val='*'>*</text>
+
+		<text bindtap='setNum' data-val='1'>1</text>
+		<text bindtap='setNum' data-val='2'>2</text>
+		<text bindtap='setNum' data-val='3'>3</text>
+		<text bindtap='setNum' data-val='-'>-</text>
+		
+		<text bindtap='setNum' data-val='0'>0</text>
+		<text bindtap='setNum' data-val='.'>.</text>
+		<text bindtap='setNum' data-val='+'>+</text>
+		<text bindtap='setNum' data-val='='>=</text>
+	</view>
+</view>

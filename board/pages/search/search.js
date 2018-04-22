@@ -83,12 +83,17 @@ Page({
     var val = this.data.val;
     var This = this;
     app.GetHttpData(val,function(result){
+      console.log(result);
       This.setData({
         inputVal: '',
         result: result
       });
     });
-    console.log(this.data.result);
+    // console.log(this.data.result);// 打印不出来因为异步
+
+    // setTimeout(function(){
+    //   console.log(This.data.result);
+    // },1000);
   },
   turnBoard: function(){
     wx.navigateTo({
