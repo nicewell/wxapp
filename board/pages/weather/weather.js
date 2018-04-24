@@ -126,7 +126,7 @@ Page({
         var weather = weatherData[0].weather;
         var wind = weatherData[0].wind;
         var arrTips = result.results[0].index;
-        console.log(result.results[0]);
+        console.log(weatherData);
         This.setData({
           weatherData: weatherData,
           temp:temperature,
