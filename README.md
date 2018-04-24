@@ -27,4 +27,5 @@
         - 百度地图接口
         - 天气接口
 - [百度天气api接口](https://blog.csdn.net/younghaiqing/article/details/54799303)
-- 
+- [中国天气网api接口-cdn](https://blog.csdn.net/x_iya/article/details/52189750)
+- [中国天气网api接口-api](http://wthrcdn.etouch.cn/weather_mini?city=武汉)

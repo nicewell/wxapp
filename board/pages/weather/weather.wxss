@@ -7,23 +7,41 @@
 	color: #ffffff;
 }
 .today{
-	height: 40%;
+	height: 50%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	align-items: center;
 	text-align: center;
 	font-size: 30rpx;
 }
 .city{
-	padding: 1em 0;
-	margin-bottom: 50rpx;
+	padding: 0.5em 0;
 }
 .temp{
 	font-size: 60rpx;
+  margin-top: 30rpx;
 }
 .weather{
-	margin-bottom: 50rpx;
+	margin-bottom: 30rpx;
 }
-.tips{}
-.future{}
+.tips{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 22rpx;
+  text-align: left;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.future{
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.future-item{
+	width: 30%;
+	box-sizing: border-box;
+	border-radius: 20rpx;
+	box-shadow: 0 0 20rpx 0 rgba(0,0,0,0.6);
+}

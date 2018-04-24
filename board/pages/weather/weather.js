@@ -121,14 +121,18 @@ Page({
       },
       success: function (res) {
         var result = res.data;
-        var temperature = result.results[0].weather_data[0].temperature;
-        var weather = result.results[0].weather_data[0].weather;
-        var wind = result.results[0].weather_data[0].wind;
+        var weatherData = result.results[0].weather_data;
+        var temperature = weatherData[0].temperature;
+        var weather = weatherData[0].weather;
+        var wind = weatherData[0].wind;
+        var arrTips = result.results[0].index;
         console.log(result.results[0]);
         This.setData({
+          weatherData: weatherData,
           temp:temperature,
           weather:weather,
-          wind:wind
+          wind:wind,
+          arrTips: arrTips
         });
       }
     });
