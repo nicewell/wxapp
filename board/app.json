@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/movie/movie",
+    "pages/movie/recommendation",
+    "pages/movie/search",
     "pages/weather/weather",
     "pages/calc/calc",
     "pages/search/search",
@@ -18,13 +20,19 @@
         "pagePath": "pages/movie/movie",
         "iconPath":"",
         "selectedIconPath": "",
-        "text": "首页"
+        "text": "影院热映"
       },
       {
-        "pagePath": "pages/weather/weather",
+        "pagePath": "pages/movie/recommendation",
         "iconPath": "",
         "selectedIconPath": "",
-        "text": "天气"
+        "text": "电影推荐"
+      },
+      {
+        "pagePath": "pages/movie/search",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "电影查询"
       }
     ]
   },

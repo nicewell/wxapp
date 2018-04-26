@@ -1,4 +1,7 @@
 // pages/movie/movie.js
+wx.showLoading({
+  title: '加载中',
+});
 Page({
   /**
    * 页面的初始数据
@@ -36,14 +39,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    
   },
 
   /**
@@ -64,7 +67,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    
   },
 
   /**
@@ -96,10 +99,32 @@ Page({
       success: function (res) {
         console.log(res.data.subjects);
         var movies = res.data.subjects;
+        This.processMovies(movies);
         This.setData({
           movies: movies
         });
+        wx.hideLoading();
       }
     });
+  },
+  processMovies: function (movies){
+    // var movies = this.data.movies;
+    for (var i = 0; i < movies.length; i++) {
+      var strCasts = '';
+      var strDirectors = '';
+      var strGenres = '';
+      for (var j = 0; j < movies[i].casts.length; j++) {
+        strCasts += ' / ' + movies[i].casts[j].name;
+      }
+      for (var j = 0; j < movies[i].directors.length; j++) {
+        strDirectors += ' / ' + movies[i].directors[j].name;
+      }
+      for (var j = 0; j < movies[i].genres.length; j++) {
+        strGenres += ' / ' + movies[i].genres[j];
+      }
+      movies[i].castsName = strCasts.slice(3);
+      movies[i].sirectorsName = strDirectors.slice(3);
+      movies[i].genresName = strGenres.slice(3);
+    }
   }
 })
