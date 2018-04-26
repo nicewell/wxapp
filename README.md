@@ -40,9 +40,17 @@
 
 - 项目开发阶段涉及内容&接口
     - 网络通信
-    - 豆瓣电影接口
+    - 豆瓣电影接口[豆瓣api]
     - 模板
     - 页面引用
     - js封装引用
     - loading
     - swiper
+    - tips
+        - [通过快速入门知道api地址](https://api.douban.com/v2/book/1220562)
+        - [通过任一电影详情url携带ID](https://movie.douban.com/subject/4920389/)
+        - [通过所得ID进行访问](https://api.douban.com/v2/movie/subject/4920389)
+- 关于豆瓣api注意
+- `url: 'https://api.douban.com/v2/movie/in_theaters'`因权限问题，用豆瓣官方返回403
+- [`url: 'https://douban.uieee.com/v2/movie/in_theaters`](https://github.com/zce/weapp-demo/blob/master/README.md)返回400
+- [`'Content-Type': 'json'`](https://blog.csdn.net/oliver_web/article/details/54427313)需要修改header的type
