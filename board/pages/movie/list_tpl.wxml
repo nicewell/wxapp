@@ -1,0 +1,19 @@
+<!-- list.wxml -->
+<template name="list">
+  <view class='hot-list'>
+    <block wx:for='{{movies}}' wx:key='{{key}}'>
+      <view class='list'>
+      <view class='poster'>
+        <image src='{{item.images.small}}' mode='scaleToFill'></image>
+      </view>
+      <view class='info'>
+        <text class='name'>名称：{{item.title}}</text>
+        <text class='director'>导演：{{item.castsName}}</text>
+        <text class='actors'>主演：{{item.sirectorsName}}</text>
+        <text class='type'>类型：{{item.genresName}}</text>
+        <text class='time'>上映时间：{{item.pubdates[0]}}</text>
+      </view>
+    </view>
+    </block>
+  </view>
+</template>

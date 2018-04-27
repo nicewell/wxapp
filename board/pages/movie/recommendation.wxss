@@ -1,1 +1,3 @@
 /* pages/movie/recommendation.wxss */
+/** list.wxss **/
+@import "list.wxss";

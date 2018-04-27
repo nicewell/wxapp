@@ -3,42 +3,5 @@
   width: 100%;
   height: 500rpx;
 }
-.hot-list{
-	background: #242424;
-	color: #ccc;
-}
-.list{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-  border-bottom: 1px solid #000;
-}
-.poster{
-	position: relative;
-	width: 270rpx;
-	height: 405rpx;
-}
-.poster image{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.info{
-	width: 450rpx;
-	box-sizing: border-box;
-	padding-top: 1.0em;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-}
-.info text{
-	font-size: 28rpx;
-}
-.info text + text{
-	margin-top: 20rpx;
-}
-.name{}
-.director{}
-.actors{}
-.type{}
-.time{}
+/** list.wxss **/
+@import "list.wxss";

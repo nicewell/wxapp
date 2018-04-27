@@ -1,6 +1,7 @@
 // pages/movie/recommendation.js
+var common = require('./common.js');
+common.showLoading('电影推荐');
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -12,14 +13,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.loadMovies();
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
@@ -62,5 +63,24 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  loadMovies: function() {
+    var This = this;
+    wx.request({
+      url: 'https://douban.uieee.com/v2/movie/top250',
+      header: {
+        // 'content-type': 'application/json'
+        'Content-Type': 'json'
+      },
+      success: function(res) {
+        console.log(res.data.subjects);
+        var movies = res.data.subjects;
+        common.processMovies(movies);
+        This.setData({
+          movies: movies
+        });
+        common.hideLoading();
+      }
+    })
   }
 })

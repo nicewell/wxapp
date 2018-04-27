@@ -1,2 +1,4 @@
 <!--pages/movie/recommendation.wxml-->
-<text>pages/movie/recommendation.wxml</text>
+<!-- 引入list_tpl模板 -->
+<import src="list_tpl.wxml"/>
+<template is="list" data="{{movies}}"/>
