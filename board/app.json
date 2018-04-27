@@ -18,20 +18,20 @@
     "list": [
       {
         "pagePath": "pages/movie/movie",
-        "iconPath":"",
-        "selectedIconPath": "",
+        "iconPath":"assets/imgs/cinema.png",
+        "selectedIconPath": "assets/imgs/cinema-act.png",
         "text": "影院热映"
       },
       {
         "pagePath": "pages/movie/recommendation",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "assets/imgs/film.png",
+        "selectedIconPath": "assets/imgs/film-act.png",
         "text": "电影推荐"
       },
       {
         "pagePath": "pages/movie/search",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "assets/imgs/search.png",
+        "selectedIconPath": "assets/imgs/search-act.png",
         "text": "电影查询"
       }
     ]
