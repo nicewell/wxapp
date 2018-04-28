@@ -1,1 +1,5 @@
-{}
+{
+  "navigationBarTitleText": "电影推荐",
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTextStyle": "white"
+}

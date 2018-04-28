@@ -1,6 +1,9 @@
 // pages/movie/recommendation.js
 var common = require('./common.js');
-common.showLoading('电影推荐');
+// common.showLoading('电影推荐');
+wx.showLoading({
+  title: '电影推荐...',
+});
 Page({
   /**
    * 页面的初始数据
@@ -79,7 +82,8 @@ Page({
         This.setData({
           movies: movies
         });
-        common.hideLoading();
+        // common.hideLoading();
+        wx.hideLoading();
       }
     })
   }

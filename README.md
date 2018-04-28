@@ -55,8 +55,13 @@
 - [`url: 'https://douban.uieee.com/v2/movie/in_theaters`](https://github.com/zce/weapp-demo/blob/master/README.md)返回400
 - [`'Content-Type': 'json'`](https://blog.csdn.net/oliver_web/article/details/54427313)需要修改header的type
 
-- 关于bug
+
+- [ ] 关于bug
     - 封装在外部的 common.showLoading('str')
     - 为什么两个页面都执行了 common.showLoading('str')
     - 不是当前页面？
     - 执行顺序是什么样子的？
+
+- [x] 完成电影wxapp
+- [ ] 增加历史查询记录
+- [ ] 查询记录设置存活时间和条目数量

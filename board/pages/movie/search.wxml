@@ -1,2 +1,8 @@
 <!--pages/movie/search.wxml-->
-<text>pages/movie/search.wxml</text>
+<view class='search-form'>
+  <input type='text' bindinput='getVal' value='{{val}}' placeholder='请输入关键词'></input>
+  <button type='primary' bindtap='loadMovies' data-val='{{val}}' size='mini' loading='{{loading}}'>查询</button>
+</view>
+<!-- 引入list_tpl模板 -->
+<import src="list_tpl.wxml"/>
+<template is="list" data="{{movies}}"/>

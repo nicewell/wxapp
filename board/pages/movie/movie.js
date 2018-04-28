@@ -1,6 +1,9 @@
 // pages/movie/movie.js
 var common = require('./common.js');
-common.showLoading('影院热映');
+// common.showLoading('影院热映..');
+wx.showLoading({
+  title: '影院热映...',
+});
 Page({
   /**
    * 页面的初始数据
@@ -102,7 +105,8 @@ Page({
         This.setData({
           movies: movies
         });
-        common.hideLoading();
+        // common.hideLoading();
+        wx.hideLoading();
       }
     });
   }

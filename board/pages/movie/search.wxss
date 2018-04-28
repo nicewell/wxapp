@@ -1,1 +1,35 @@
 /* pages/movie/search.wxss */
+/** list.wxss **/
+@import "list.wxss";
+/*cover*/
+.hot-list{
+	background: #fff;
+	color: #666;
+}
+.list{
+  border-bottom: 1px solid #ccc;
+}
+
+.search-form{
+	box-sizing: border-box;
+	padding: 20rpx;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.search-form input{
+	flex: 1;
+	margin-right: 20rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	border: 1px solid #ccc;
+	border-radius: 10rpx;
+	font-size: 30rpx;
+	box-sizing: border-box;
+	padding: 0 10rpx;
+}
+.search-form button{
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 30rpx;
+}
