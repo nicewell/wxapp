@@ -4,10 +4,6 @@ App({
     // 向服务器提交请求
     wx.request({
       url: 'https://apicloud.mob.com/v1/mobile/address/query?key=17895d7173644&phone=' + phoneNum,
-      data: {
-        x: '',
-        y: ''
-      },
       header: {
         'content-type': 'application/json' // 默认值
       },

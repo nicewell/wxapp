@@ -3,6 +3,7 @@
     "pages/movie/movie",
     "pages/movie/recommendation",
     "pages/movie/search",
+    "pages/movie/detail",
     "pages/weather/weather",
     "pages/calc/calc",
     "pages/search/search",

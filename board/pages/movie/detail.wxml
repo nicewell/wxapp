@@ -1,0 +1,24 @@
+<!--pages/movie/detail.wxml-->
+<view class="page">
+	<view class='section-video'>
+	  <view class='video-tit'>{{videoTit?videoTit:'电影预告'}}</view>
+	  <video src="{{videoSrc}}" poster="{{poster}}" controls></video>
+	</view>
+	<view class="movie-info">
+		<view class="cover">
+			<image src="{{src}}"></image>
+			<text class="average">豆瓣评分：{{average}}</text>
+		</view>
+		<view class="movie-txt">
+			<text class="title">电影：{{title}}</text>
+			<text class="directors">导演：{{directors}}</text>
+			<text class="casts">主演：{{casts}}</text>
+			<text class="pubdates">上映时间：{{pubdates}}</text>
+			<text class="countries">国家地区：{{countries}}</text>
+		</view>
+		<view class="summary">
+			<text class="summary-tit">剧情：</text>
+			<text class="summary-des">{{summary}}</text>
+		</view>
+	</view>
+</view>

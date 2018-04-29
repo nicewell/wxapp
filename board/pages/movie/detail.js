@@ -1,9 +1,5 @@
-// pages/movie/recommendation.js
+// pages/movie/detail.js
 var common = require('./common.js');
-// common.showLoading('电影推荐');
-// wx.showLoading({
-//   title: '电影推荐...',
-// });
 Page({
   /**
    * 页面的初始数据
@@ -16,14 +12,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.loadMovies();
+    console.log(options);
+    this.setData({ id: options.id});
+    this.loadMovieItem(options.id);
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+  
   },
 
   /**
@@ -67,24 +65,33 @@ Page({
   onShareAppMessage: function () {
   
   },
-  loadMovies: function() {
+  loadMovieItem: function(id){
     var This = this;
     wx.request({
-      url: 'https://douban.uieee.com/v2/movie/top250',
+      url: 'https://douban.uieee.com/v2/movie/subject/'+id,
       header: {
-        // 'content-type': 'application/json'
         'Content-Type': 'json'
       },
-      success: function(res) {
-        console.log(res.data.subjects);
-        var movies = res.data.subjects;
-        common.processMovies(movies);
+      success: function (res) {
+        console.log(res.data);
+        var movie = res.data;
+        // console.log(common.processArr(movie.casts,'name'))
+        // console.log(common.processArr(movie.countries))
         This.setData({
-          movies: movies
+          movie: movie,
+          videoTit:movie.trailers[0].title,
+          videoSrc:movie.trailers[0].resource_url,
+          poster:movie.trailers[0].medium,
+          src:movie.images.medium,
+          average:movie.rating.average,
+          title:movie.title,
+          directors:common.processArr(movie.directors,'name'),
+          casts:common.processArr(movie.casts,'name'),
+          pubdates:movie.pubdate,
+          countries:common.processArr(movie.countries),
+          summary:movie.summary
         });
-        // common.hideLoading();
-        // wx.hideLoading();
       }
-    })
+    });
   }
 })
