@@ -93,7 +93,7 @@ Page({
     wx.request({
       // url: 'https://api.douban.com/v2/movie/in_theaters',
       // https://github.com/zce/weapp-demo/blob/master/README.md
-      url: 'https://douban.uieee.com/v2/movie/in_theaters',
+      url: common.apiUrl('in_theaters'),
       header: {
         // 'content-type': 'application/json'
         'Content-Type': 'json'

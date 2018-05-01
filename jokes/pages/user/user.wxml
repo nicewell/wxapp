@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+<view class="user-top">
+	<view class='user-photo'>
+	  <image src='{{user.avatarUrl}}'></image>
+	</view>
+	<view class="user-txt">
+		<text class='user-name'>昵称{{user.nickName}}</text>
+		<text class='user-local'>位置：{{user.province}} {{user.city}}</text>
+	</view>
+</view>
+<view class='user-cont'>
+  <text class='user-love'>我的收藏：{{user.love}}</text>
+  <text class='user-comment'>我的评论：{{user.comment}}</text>
+</view>

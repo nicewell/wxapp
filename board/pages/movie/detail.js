@@ -68,7 +68,7 @@ Page({
   loadMovieItem: function(id){
     var This = this;
     wx.request({
-      url: 'https://douban.uieee.com/v2/movie/subject/'+id,
+      url: common.apiUrl('subject/'+id),
       header: {
         'Content-Type': 'json'
       },

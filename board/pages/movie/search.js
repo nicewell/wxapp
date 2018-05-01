@@ -81,7 +81,7 @@ Page({
       loading: true
     });
     wx.request({
-      url: 'https://douban.uieee.com/v2/movie/search?q=' + queryMsg,
+      url: common.apiUrl('search?q=' + queryMsg),
       header: {
         // 'content-type': 'application/json'
         'Content-Type': 'json'
@@ -98,5 +98,8 @@ Page({
         wx.hideLoading();
       }
     });
+  },
+  getDetail: function(e){
+    common.showDetail(e);
   }
 })

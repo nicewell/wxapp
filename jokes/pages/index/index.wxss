@@ -1,0 +1,64 @@
+/**index.wxss**/
+
+.list{
+	padding: 16px;
+	background-color: #fff;
+	border-bottom: 10px solid #f6f5f5;
+}
+.user{
+	margin-bottom: 12px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+.user-photo{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 14px;
+	background-color: #f6f5f5;
+}
+.user-photo image{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.user-info{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+.user-info .name{
+	opacity: .7;
+	font-size: 16px;
+	color: #8f8f95;
+}
+.user-info .date{
+	font-size: 12px;
+	color: #ccc;
+}
+.cont{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+.cont-des{
+	font-size: 16px;
+	color: #464646;
+	margin-bottom: 16px;
+}
+
+.cont-media image,
+.cont-media video{
+	display: block;
+  margin: 0 auto;
+	width: 100%;
+}
+.cont-media image{
+	min-height: 200px;
+}
+.cont-media video{
+	height: 216px;
+}

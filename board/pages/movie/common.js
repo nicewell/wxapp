@@ -1,3 +1,4 @@
+var URI = 'https://douban.uieee.com/v2/movie/';
 //封装一个方法判断数组和对象
 function isType(obj) {
   var type = Object.prototype.toString.call(obj);
@@ -67,5 +68,8 @@ module.exports = {
   processMovies : processMovies,
   showLoading: showLoading,
   hideLoading: hideLoading,
-  showDetail: showDetail
+  showDetail: showDetail,
+  apiUrl:function(str){
+    return URI + str;
+  }
 };

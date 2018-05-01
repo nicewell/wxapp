@@ -55,6 +55,9 @@
 - [`url: 'https://douban.uieee.com/v2/movie/in_theaters`](https://github.com/zce/weapp-demo/blob/master/README.md)返回400
 - [`'Content-Type': 'json'`](https://blog.csdn.net/oliver_web/article/details/54427313)需要修改header的type
 
+## 新闻app
+- [news-api](https://www.jianshu.com/p/e6f072839282)
+- 
 
 - [ ] 关于bug
     - 封装在外部的 common.showLoading('str')
@@ -63,5 +66,21 @@
     - 执行顺序是什么样子的？
 
 - [x] 完成电影wxapp
+- [ ] 下拉加载
 - [ ] 增加历史查询记录
 - [ ] 查询记录设置存活时间和条目数量
+
+---
+## you-now
+- [ ] Promise
+
+---
+## video
+- [ ] [js-斗地主游戏，打地鼠游戏，万年历](https://ke.qq.com/course/231377)
+- [ ] [wxapp-游戏，点餐，电影，瀑布流，天气预报](https://ke.qq.com/course/183479)
+- [ ] [微信小程序棒子老虎鸡](https://ke.qq.com/course/277454)
+- [ ] [电商小程序开发](https://ke.qq.com/course/282732)
+- [ ] [会员 卡券 红包 积分 模板消息](https://ke.qq.com/course/280316)
+- [ ] [小程序菜单栏联动](https://ke.qq.com/course/243926)
+- [ ] []()
+- [ ] []()

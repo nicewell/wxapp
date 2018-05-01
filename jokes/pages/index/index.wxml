@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="list-group">
+  <block wx:for='{{data}}' wx:key='key'>
+  	<view class="list">
+  		<view class="user">
+  			<view class="user-photo">
+  				<image src='{{item.header}}'></image>
+  			</view>
+  			<view class="user-info">
+  				<text class="name">{{item.username}}</text>
+  				<text class="date">{{item.passtime}}</text>
+  			</view>
+  		</view>
+  		<view class="cont">
+  			<text class="cont-des">{{item.text}}</text>
+  			<view class="cont-media">
+  				<image src='{{item.image||item.gif}}' wx:if='{{item.image||item.gif}}' mode='aspectFit'></image>
+  				<video src='{{item.video}}' wx:if='{{item.video}}' objectFit='fill' poster='{{item.thumbnail}}'></video>
+  			</view>
+  		</view>
+  	</view>
+  </block>
+</view>

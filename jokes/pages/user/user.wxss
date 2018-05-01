@@ -1,0 +1,54 @@
+/* pages/user/user.wxss */
+.user-top{
+	padding: 40rpx 20px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.user-photo{
+	position: relative;
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+	margin: 0 auto 20rpx;
+	overflow: hidden;
+	border: 4rpx solid #ccc;
+}
+.user-photo image{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.user-txt{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+.user-name,
+.user-local{
+	text-align: center;
+	margin-bottom: 10rpx;
+}
+.user-name{
+	font-size: 32rpx;
+	color: #999;
+}
+.user-local{
+	font-size: 28rpx;
+	color: #ccc;
+}
+.user-cont{
+	padding: 20px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	font-size: 32rpx;
+	color: #666;
+}
+.user-cont>text{
+	margin-bottom: 20px;
+}
+.user-love{}
+.user-comment{}
