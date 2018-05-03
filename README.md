@@ -57,7 +57,16 @@
 
 ## 新闻app
 - [news-api](https://www.jianshu.com/p/e6f072839282)
-- 
+
+## 段子狗
+
+## [便民大杂烩](http://api.mob.com/#/)
+- [今日食材](http://apicloud.mob.com/appstore/health/search?key=123456&name=土豆)
+- [菜谱推荐](http://api.mob.com/#/apiwiki/cookmenu)
+- 老黄历
+- 天气，空气
+- 解梦
+- 历史上的今天
 
 - [ ] 关于bug
     - 封装在外部的 common.showLoading('str')
