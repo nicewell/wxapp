@@ -68,6 +68,18 @@
 - 解梦
 - 历史上的今天
 
+## 生成二维码API
+- [qrcodejs](https://github.com/davidshimjs/qrcodejs)
+
+
+## 面向对象斗地主小程序
+- 游戏对象、玩家对象、扑克对象、每张牌对象
+- 各个对象的属性和方法分析
+- 控制台打印
+
+
+
+
 - [ ] 关于bug
     - 封装在外部的 common.showLoading('str')
     - 为什么两个页面都执行了 common.showLoading('str')
