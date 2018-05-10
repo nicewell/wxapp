@@ -84,3 +84,9 @@
 - [ ] [小程序菜单栏联动](https://ke.qq.com/course/243926)
 - [ ] []()
 - [ ] []()
+- [ ] 
+
+
+### 自定义tabbar
+- 小程序上线的有人的是自定义的tabbar，比如中间一个个比较大
+- [自定义tabbar](https://github.com/songzeng2016/wechat-app-tabbar)
