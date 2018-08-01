@@ -86,7 +86,25 @@
 - [ ] []()
 - [ ] 
 
+--------
+- [狗蛋TV](https://juejin.im/post/5af951bff265da0b9d7855ce?utm_source=gold_browser_extension)
+    - [原文-github](https://github.com/lishuaixingNewBee/gordanTv)
+
+- [七天速成小程序-喜马拉雅](https://juejin.im/post/5b20558b5188257d86688a36?utm_source=gold_browser_extension)
+> 细节：
+> 1. 整个页面的滚动条优化：
+> ::-webkit-scrollbar { width: 0;height: 0;color: transparent; }
+> 4. 字体：简书字体，平滑抗锯齿、
+> font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;-webkit-font-smoothing: subpixel-antialiase;
 
 ### 自定义tabbar
 - 小程序上线的有人的是自定义的tabbar，比如中间一个个比较大
 - [自定义tabbar](https://github.com/songzeng2016/wechat-app-tabbar)
+
+
+
+- [项目](https://github.com/yangzaiwangzi/KM-MiniProgram)
+
+
+### 完整项目发布与维护
+##### 服务项目思路：https://www.cnblogs.com/liangdaye/p/5915079.html
